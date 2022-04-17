@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.alexa.demo</groupId>
+	<artifactId>alexa-demo</artifactId>
+	<version>1.0</version>
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<aws-alexa-version>2.20.2</aws-alexa-version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk</artifactId>
+			<version>${aws-alexa-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk-core</artifactId>
+			<version>${aws-alexa-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk-lambda-support</artifactId>
+			<version>${aws-alexa-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk-servlet-support</artifactId>
+			<version>${aws-alexa-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk-dynamodb-persistence-adapter</artifactId>
+			<version>${aws-alexa-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk-apache-client</artifactId>
+			<version>${aws-alexa-version}</version>
+		</dependency>
+	</dependencies>
+</project>
