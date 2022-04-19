@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.amazon.ask.alexademo.handlers;
+package com.amazon.ask.alexademo.lambda.custom.handlers;
 
 import java.util.Optional;
 
@@ -14,19 +14,20 @@ import static com.amazon.ask.request.Predicates.intentName;
  * @author gaurav
  *
  */
-public class CancelandStopIntentHandler implements RequestHandler {
+public class HelpIntentHandler implements RequestHandler {
 
     @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(intentName("AMAZON.StopIntent").or(intentName("AMAZON.CancelIntent")));
+        return input.matches(intentName("AMAZON.HelpIntent"));
     }
 
     @Override
     public Optional<Response> handle(HandlerInput input) {
+        String speechText = "You can say hello to me!";
         return input.getResponseBuilder()
-                .withSpeech("Goodbye")
-                .withSimpleCard("HelloWorld", "Goodbye")
-                .withShouldEndSession(true)
+                .withSpeech(speechText)
+                .withSimpleCard("HelloWorld", speechText)
+                .withReprompt(speechText)
                 .build();
     }
 }

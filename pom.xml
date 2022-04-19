@@ -5,7 +5,9 @@
 	<artifactId>alexa-demo</artifactId>
 	<version>1.0</version>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
+		<maven.compiler.source>11</maven.compiler.source>
+     	<maven.compiler.target>11</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<aws-alexa-version>2.20.2</aws-alexa-version>

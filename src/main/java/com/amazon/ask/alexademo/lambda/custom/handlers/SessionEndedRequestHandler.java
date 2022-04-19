@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.amazon.ask.alexademo.handlers;
+package com.amazon.ask.alexademo.lambda.custom.handlers;
 
 import java.util.Optional;
 
