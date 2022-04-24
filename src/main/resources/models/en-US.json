@@ -1,0 +1,189 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "analytics guru",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BookingIntent",
+                    "slots": [
+                        {
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "Time",
+                            "type": "LIST_OF_TIMES"
+                        },
+                        {
+                            "name": "Org",
+                            "type": "LIST_OF_ORGS"
+                        }
+                    ],
+                    "samples": [
+                        "give units sold for {Org}",
+                        "How many units did we sell for {Org} last year",
+                        "tell me the units sold for {Org} last year",
+                        "tell me the number of units sold for {Org} last year"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RevenueIntent",
+                    "slots": [
+                    	{
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "Tell me the combined net revenue in {Date}",
+                        "What was the combined net revenue in {Date}"
+                    ]
+                },
+                {
+                    "name": "ProductSoldIntent",
+                    "slots": [
+                    	{
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "What product sold the most in {Date}",
+                        "which product was the highest earner in {Date}",
+                        "which product earned the highest revenue in {Date}"
+                    ]
+                },
+                {
+                    "name": "ProductCountryIntent",
+                    "slots": [
+                    	{
+                            "name": "Date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "Which country was the top performer in the Europe {Date}"
+                    ]
+                },
+                {
+                    "name": "OverdueSingaporeIntent",
+                    "slots": [],
+                    "samples": [
+                        "What is overdue in the Singapore plant for Tri leaflet item group this month"
+                    ]
+                },
+                {
+                    "name": "OverdueCostRicaIntent",
+                    "slots": [],
+                    "samples": [
+                        "Are we behind in the Costa Rica plant for Stents"
+                    ]
+                },
+                {
+                    "name": "RefundGreetingsPackIntent",
+                    "slots": [],
+                    "samples": [
+                        "return greetings pack",
+                        "refund greetings pack",
+                        "cancel greetings pack"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_TIMES",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "month"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quarter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "year"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "today"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_ORGS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "THV"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Critical Care"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SRG"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Surgical"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "VR"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Vascular"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

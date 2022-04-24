@@ -13,7 +13,10 @@ import java.util.Map;
 public class SkillData {
 
     public static final String [] HELLO_STRINGS = new String[] {"Howdy!", "Hello!", "How are you?", "Hiya!"};
-    public static final String [] YES_NO_STRINGS = new String[] {"Would you like another greeting?", "Can I give you another greeting?", "Do you want to hear another greeting?"};
+    public static final String [] YES_NO_STRINGS = new String[] {"Would you like another information?", "Can I give you another information?", "Do you want to hear another information?"};
+    public static final String [] BOOKING_STRINGS = new String[] {"What information you would like to know about booking ?", "Can I tell you todays booking?", "Do you want to hear another booking?"};
+    public static final String [] REVENUE_STRINGS = new String[] {"What information you would like to know about revenue ?", "Can I tell you last year's earnings?"};
+    public static final String [] PRODUCT_STRINGS = new String[] {"What information you would like to know about product ?"};
     public static final String [] LEARN_MORE_STRINGS = new String[] {"Want to learn more about it?", "Should I tell you more about it?", "Want to learn about it?", "Interested in learning more about it?"};
     public static final String [] GOODBYE_STRINGS = new String[] {"OK.  Goodbye!", "Have a great day!", "Come back again soon!"};
 
